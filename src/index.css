@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body, .container {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
