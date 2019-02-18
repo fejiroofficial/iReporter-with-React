@@ -1,0 +1,9 @@
+.Footer {
+    height: 57px;
+    width: inherit;
+    padding-left: 42px;
+    padding-top: 1px;
+    background-color: #2c2727;
+    color: white;
+    text-align: center;
+}
