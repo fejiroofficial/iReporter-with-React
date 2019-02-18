@@ -1,7 +1,7 @@
 import React from 'react';
 import Aux from '../../hoc/Aux';
 
-const HomePage = () => (
+const HomePage = (props) => (
   <Aux>
     <div>Hero-Banner</div>
     <div>OUR WORK IS IMPORTANT</div>

@@ -1,0 +1,152 @@
+.LogoBox {
+    height: inherit;
+    width: fit-content;
+    font-family: 'Ultra', serif;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 15px;
+    color: #2c2727;
+}
+
+.NavBar {
+    height: 70px;
+    width: inherit;
+    display: block;
+    background-color: #fefcfc;
+    text-align: center;
+    display: flex;
+}
+
+.LargeScreenNav {
+    display: none;
+}
+
+.NavBar p {
+    display: none;
+}
+
+.LoginBtn {
+    display: none;
+    font-weight: bold;
+    height: 40px;
+    width: 201px;
+    border-width: thin;
+    border-radius: 8px;
+    margin-left: 62px;
+    text-align: center;
+    color: white;
+    padding-top: 8px;
+    background-color: lightseagreen;
+    cursor: pointer;
+}
+
+.LoginBtn:hover {
+    background-color: #1f8983;
+}
+
+.MenuIcon {
+    height: inherit;
+    width: 60px;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 18px;
+}
+
+.MenuIconBar {
+    width: 24px;
+    height: 2px;
+    background-color: #2c2727;
+    margin: 6px 0;
+}
+
+a.Logo {
+    text-decoration: none;
+    margin-left: 13px;
+}
+
+@media (min-width: 360px) {
+    a.Logo {
+        margin-left: 29px;
+    }
+    .LoginBtn {
+        margin-left: 82px;
+    }
+}
+
+@media (min-width: 375px) {
+    a.Logo {
+        margin-left: 35px;
+    }
+    .Loginbtn {
+        margin-left: 91px;
+    }
+}
+
+@media (min-width: 414px) {
+    a.logo {
+        margin-left: 55px;
+    }
+    .home-top-btn {
+        margin-left: 109px;
+    }
+}
+
+@media (min-width: 768px) {
+    a.Logo {
+        margin-left: 55px;
+    }
+    .LoginBtn {
+        margin-left: 279px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .MenuIcon {
+        display: none;
+    }
+    a.Logo {
+        margin-left: 66px;
+    }
+    .LoginBtn {
+        margin-left: 10px;
+        margin-top: 15px;
+        width: 100px;
+        display: block;
+    }  
+    .NavBar p {
+        margin-left: 34%;
+        font-size: 20px;
+        display: block;
+    }
+}
+
+@media (min-width: 1024px) {
+    .MenuIcon {
+        display: none;
+    }
+    a.Logo {
+        margin-left: 66px;
+    }
+    .LoginBtn {
+        margin-left: 10px;
+        margin-top: 15px;
+        width: 100px;
+        display: block;
+    }  
+    .NavBar p {
+        margin-left: 39%;
+        font-size: 20px;
+        display: block;
+    }
+}
+
+@media (min-width: 1359px) {
+    a.Logo {
+        margin-left: 185px;
+    }
+    .LoginBtn {
+        margin-left: 10px;
+        margin-top: 15px;
+    }  
+}
+
