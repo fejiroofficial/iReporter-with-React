@@ -114,9 +114,10 @@ a.Logo {
         display: block;
     }  
     .NavBar p {
-        margin-left: 34%;
-        font-size: 20px;
+        margin-left: 39%;
+        font-size: 16px;
         display: block;
+        padding-top: 8px;
     }
 }
 
@@ -132,12 +133,7 @@ a.Logo {
         margin-top: 15px;
         width: 100px;
         display: block;
-    }  
-    .NavBar p {
-        margin-left: 39%;
-        font-size: 20px;
-        display: block;
-    }
+    } 
 }
 
 @media (min-width: 1359px) {
