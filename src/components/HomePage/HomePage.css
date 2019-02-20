@@ -1,0 +1,184 @@
+.InfoBox {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+}
+
+.InfoBoxMini {
+    min-height: 250px;
+    width: 270px;
+    margin-left: 26px;
+    margin-bottom: 60px;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 7px;
+    border-color: lightgrey;
+}
+
+.Box {
+    width: inherit;
+    height: fit-content;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+}
+
+.InfoBoxMiniImg{
+    height: 154px;
+    width: inherit;
+    background-image: url('../.././assets/img/megaphone.jpg');
+    background-size: 64%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.InfoBoxMiniImgTwo{
+    height: 154px;
+    width: inherit;
+    background-image: url('../.././assets/img/investigate.jpg');
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.InfoBoxMiniImgThree{
+  height: 154px;
+  width: inherit;
+  background-image: url('../.././assets/img/newspaper.jpg');
+  background-size: 69%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.InfoBoxMiniTitle{
+    height: 27px;
+    width: inherit;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.InfoBoxMiniText{
+  min-height: 48px;
+  width: inherit;
+  text-align: center;
+  margin-top: -12px;
+  font-size: smaller;
+}
+
+.HomePageMapDiv {
+  height: 400px;
+  width: inherit;
+  background-image: url('../.././assets/img/africaMap3.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.IncidentContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.IncidentMini {
+  min-height: 250px;
+  width: 270px;
+  margin-bottom: 60px;
+  margin-right: 40px;
+  border-radius: 5px;
+}
+
+.PartnersMini {
+  height: 150px;
+  margin-left: 84px;
+  width: 150px;
+}
+
+.IncidentMiniOne {
+  background-image: url('../.././assets/img/Corruption.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.IncidentMiniTwo {
+  background-image: url('../.././assets/img/Corruption2.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.IncidentMiniThree {
+  background-image: url('../.././assets/img/Corruption3.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.IncidentMiniFour {
+  background-image: url('../.././assets/img/yahoo.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.IncidentMiniFive {
+  background-image: url('../.././assets/img/bridge.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.IncidentMiniSix {
+  background-image: url('../.././assets/img/FCT-Road.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.IncidentMiniSeven {
+  background-image: url('../.././assets/img/marine-litter.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.IncidentMiniEight {
+  background-image: url('../.././assets/img/Oil-spill.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.PartnersMiniOne {
+  background-image: url('../.././assets/img/andela.jpg');
+  background-size: 69%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.PartnersMiniTwo {
+  background-image: url('../.././assets/img/thinkAfrica.jpg');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.PartnersMiniThree {
+  background-image: url('../.././assets/img/now.jpg');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.PartnersMiniFour {
+  background-image: url('../.././assets/img/unicef.jpg');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1024px) {
+  .HomePageMapDiv {
+    margin-bottom: 41px;
+    height: 697px;
+  }
+}

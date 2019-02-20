@@ -101,9 +101,6 @@ a.Logo {
 }
 
 @media (min-width: 1000px) {
-    .MenuIcon {
-        display: none;
-    }
     a.Logo {
         margin-left: 66px;
     }
@@ -114,7 +111,7 @@ a.Logo {
         display: block;
     }  
     .NavBar p {
-        margin-left: 39%;
+        margin-left: 35%;
         font-size: 16px;
         display: block;
         padding-top: 8px;
