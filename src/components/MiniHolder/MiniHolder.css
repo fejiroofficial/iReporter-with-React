@@ -1,0 +1,14 @@
+.MiniHolder {
+    min-height: 400px;
+    width: inherit;
+}
+
+.MiniHolderHeader {
+    height: 48px;
+    width: inherit;
+    text-align: center;
+    color: #503f3f;
+    font-weight: bolder;
+    font-size: larger;
+    padding-top: 10px;
+}
