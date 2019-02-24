@@ -1,0 +1,30 @@
+.MenuIcon {
+    height: inherit;
+    width: 60px;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 18px;
+}
+
+.MenuIconBar {
+    width: 24px;
+    height: 2px;
+    background-color: #2c2727;
+    margin: 6px 0;
+}
+
+@media (min-width: 1024px) {
+    .MenuIcon {
+        display: none;
+    }
+    a.Logo {
+        margin-left: 66px;
+    }
+    .LoginBtn {
+        margin-left: 10px;
+        margin-top: 15px;
+        width: 100px;
+        display: block;
+    }  
+}
+

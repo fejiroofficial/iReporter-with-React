@@ -78,6 +78,11 @@
   flex-wrap: wrap;
 }
 
+.CenterItems {
+  height: fit-content;
+  width: fit-content;
+}
+
 .IncidentMini {
   min-height: 250px;
   width: 270px;

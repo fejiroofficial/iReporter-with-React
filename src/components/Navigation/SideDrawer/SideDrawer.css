@@ -1,0 +1,47 @@
+.Overlay {    
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgb(32, 178, 170);
+  background-color: rgba(32, 178, 170, 0.93);
+  overflow-x: hidden; 
+  transition: 0.5s; 
+}
+
+.OverlayContent {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.Overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: ghostwhite;
+  display: block;
+  transition: 0.3s;
+}
+
+.Overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.Overlay .Closebtn {
+  position: absolute;
+  top: 20px;
+  right: 1px;
+  font-size: 45px;
+}
+
+.Seperator {
+  height: 1px;
+  width: inherit;
+  background-color: lightgrey;
+  margin-top: 29px;
+}

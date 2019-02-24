@@ -2,7 +2,7 @@ import React from 'react';
 import Classes from './NavigationItems.css';
 
 const NavigationItems = (props) => (
-  <div className={Classes.LargeScreenNav}>
+  <div id="myNav" className={Classes.LargeScreenNav}>
     <div className={Classes.Seperator}></div>
     <a href="./about_us.html">ABOUT US</a>
     <div className={Classes.Seperator}></div>
