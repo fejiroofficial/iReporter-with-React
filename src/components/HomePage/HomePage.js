@@ -53,20 +53,20 @@ const HomePage = (props) => (
     </MiniHolder>
 
     <MiniHolder header='INTERVENTIONS'>
-    <div className={Classes.IncidentContainer}>
-          <div className={`${Classes.IncidentMini} ${Classes.IncidentMiniFive}`}></div>
-          <div className={`${Classes.IncidentMini} ${Classes.IncidentMiniSix}`}></div>
-          <div className={`${Classes.IncidentMini} ${Classes.IncidentMiniSeven}`}></div>
-          <div className={`${Classes.IncidentMini} ${Classes.IncidentMiniEight}`}></div>
+      <div className={Classes.IncidentContainer}>
+        <div className={`${Classes.IncidentMini} ${Classes.IncidentMiniFive}`}></div>
+        <div className={`${Classes.IncidentMini} ${Classes.IncidentMiniSix}`}></div>
+        <div className={`${Classes.IncidentMini} ${Classes.IncidentMiniSeven}`}></div>
+        <div className={`${Classes.IncidentMini} ${Classes.IncidentMiniEight}`}></div>
       </div>
     </MiniHolder>
 
     <MiniHolder header='OUR PARTNERS'>
-    <div className={Classes.IncidentContainer}>
-          <div className={`${Classes.PartnersMini} ${Classes.PartnersMiniOne}`}></div>
-          <div className={`${Classes.PartnersMini} ${Classes.PartnersMiniTwo}`}></div>
-          <div className={`${Classes.PartnersMini} ${Classes.PartnersMiniThree}`}></div>
-          <div className={`${Classes.PartnersMini} ${Classes.PartnersMiniFour}`}></div>
+      <div className={Classes.IncidentContainer}>
+        <div className={`${Classes.PartnersMini} ${Classes.PartnersMiniOne}`}></div>
+        <div className={`${Classes.PartnersMini} ${Classes.PartnersMiniTwo}`}></div>
+        <div className={`${Classes.PartnersMini} ${Classes.PartnersMiniThree}`}></div>
+        <div className={`${Classes.PartnersMini} ${Classes.PartnersMiniFour}`}></div>
       </div>
     </MiniHolder>
   </Aux>

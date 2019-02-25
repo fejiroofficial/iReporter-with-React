@@ -64,12 +64,21 @@ a.Logo {
     margin-left: 13px;
 }
 
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
 @media (min-width: 360px) {
     a.Logo {
         margin-left: 29px;
     }
     .LoginBtn {
-        margin-left: 82px;
+        margin-left: 82px; 
     }
 }
 
@@ -112,6 +121,15 @@ a.Logo {
     }  
     .NavBar p {
         margin-left: 35%;
+        font-size: 16px;
+        display: block;
+        padding-top: 8px;
+    }
+}
+
+@media (min-width: 1051px) {
+    .NavBar p {
+        margin-left: 50%;
         font-size: 16px;
         display: block;
         padding-top: 8px;
