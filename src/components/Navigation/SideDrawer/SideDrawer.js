@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import Classes from './SideDrawer.css';
 
 const sideDrawer = (props) => (
@@ -6,7 +7,7 @@ const sideDrawer = (props) => (
     <button onClick={props.clicked} className={Classes.Closebtn}>&times;</button>
     <div className={Classes.OverlayContent}>
       <div className={Classes.Seperator}></div>
-      <a href="./about.html">ABOUT US</a>
+      <NavLink to="/about" >ABOUT US</NavLink>
       <div className={Classes.Seperator}></div>
       <a href="./learn.html">LEARN ABOUT CORRUPTION</a>
       <div className={Classes.Seperator}></div>
