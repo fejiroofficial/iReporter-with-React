@@ -11,12 +11,16 @@ const sideDrawer = (props) => (
       <div className={Classes.Seperator}></div>
       <NavLink to="/corruption" >LEARN ABOUT CORRUPTION</NavLink>
       <div className={Classes.Seperator}></div>
+      <NavLink to="/redflags" >REDFLAGS</NavLink>
+      <div className={Classes.Seperator}></div>
+      <NavLink to="/interventions" >INTERVENTIONS</NavLink>
+      <div className={Classes.Seperator}></div>
       <a href="./login.html">LOGIN</a>
       <div className={Classes.Seperator}></div>
       <a href="./signup.html">SIGN UP</a>
       <div className={Classes.Seperator}></div>
-    </div>
-  </div>
+    </div >
+  </div >
 )
 
 export default sideDrawer;
