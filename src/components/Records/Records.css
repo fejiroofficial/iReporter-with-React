@@ -1,0 +1,15 @@
+.ManagerTitleHeader {
+  height: 43px;
+  width: inherit;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #766b6b;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.RecordContainer {
+  height: -webkit-fill-available;
+  width: 100%;
+}

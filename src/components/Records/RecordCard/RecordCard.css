@@ -1,0 +1,138 @@
+.RecordCard {
+  display: block;
+  height: 313px;
+  width: 301px;
+  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 9px;
+  box-shadow: 0px 0px 10px 1px lightgrey;
+  padding-top: 7px;
+  margin-bottom: 16px;
+}
+
+.IconHolder {
+  height: fit-content;
+  width: 430px;
+}
+
+.RedFlagIcon {
+  height: 23px;
+  width: 21px;
+  background-image: url('../../../assets/img/red_flag_13.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: right;
+}
+
+.Details {
+  width: 205px;
+  float: right;
+}
+
+.DetailsHolder {
+  height: fit-content;
+  width: 500px;
+}
+
+.NameDateDiv{
+  margin-left: 10px;
+}
+
+.NameDiv {
+  font-weight: bold;
+}
+
+.DateDiv {
+  font-size: 12px;
+}
+
+.RecordCard .Comment {
+  min-height: 178px;
+  width: 301px;
+  padding: 10px;
+  overflow-wrap: break-word;
+  margin-left: 51px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.InfoPanel {
+  height: 50px;
+  width: inherit;
+  display: flex;
+}
+
+.CardFooter {
+  display: flex;
+}
+
+.CardFooter button {
+  background-color: lightseagreen;
+  color: white;
+  height: inherit;
+  outline: none;
+  border-width: inherit;
+  border-radius: 3px;
+  border-color: none;
+  cursor: pointer;
+}
+
+@media (min-width: 360px) {
+  .RecordCard {
+    display: block;
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 375px) {
+  .RecordCard {
+    display: block;
+    padding-left: 24px;
+    width: 340px;
+    margin-left: 16px;
+  }
+}
+
+@media (min-width: 414px) {
+  .RecordCard {
+    display: block;
+    padding-left: 24px;
+    width: 340px;
+    margin-left: 38px;
+  }
+}
+
+@media (min-width: 768px) {
+  .RecordCard {
+    display: block;
+    padding-left: 15px;
+    padding-top: 19px;
+    width: 615px;
+    min-height: 180px;
+    margin-left: 91px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .RecordCard {
+    display: block;
+    padding-left: 15px;
+    margin-left: 209px;
+  }
+}
+
+@media (min-width: 1359px) {
+  .RecordCard {
+    display: block;
+    margin-left: 423px;
+  }
+}
+
+@media (min-width: 1583px) {
+  .RecordCard {
+    display: block;
+    margin-left: 504px;
+  }
+}
