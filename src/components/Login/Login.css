@@ -1,0 +1,221 @@
+.SignInContent {
+    height: 346px;
+    width: 265px;
+    margin-left: 26px;
+    border-color: lightgrey;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: thin;
+    margin-top: 50px;
+}
+
+input[class="input-field"] {
+  width: inherit;
+  padding: 12px 20px;
+  font-size: 15px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.LoginBox {
+  width: inherit;
+  height: -webkit-fill-available;
+}
+
+.SignInHeader {
+    height: 64px;
+    width: inherit;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 12px;
+    font-weight: bold;
+}
+
+.SignInForm {
+    margin: 0 auto;
+    height: 211px;
+    width: 229px;
+    margin-bottom: 10px;
+}
+
+.SignBtn {
+    height: 40px;
+    width: 129px;
+    border-width: thin;
+    border-radius: 8px;
+    margin-left: 54px;
+    text-align: center;
+    color: white;
+    padding-top: 2px;
+    background-color: lightseagreen;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+.SignBtn:hover {
+    background-color: #1f8983;
+}
+
+.SignNote {
+    font-size: 14px;
+    padding-left: 17px;
+}
+
+.SignNote a {
+    margin-left: 4px;
+    text-decoration: none;
+    color: lightseagreen;
+}
+
+.server-info {
+    background-color: dimgrey;
+    min-height: 53px;
+    position: absolute;
+    display: none;
+    width: -webkit-fill-available;
+    color: white;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+}
+
+#modal-info {
+    margin-bottom: 22px;
+}
+
+.modal-log-area {
+    display: flex;
+    width: 310px;
+    padding-top: 18px;
+    padding-left: 12px;
+    font-size: 11px;
+}
+
+.cancel-log {
+    margin-left: 4px;
+    height: 42px;
+    width: 42px;
+    margin-top: 0px;
+    font-size: 12px;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.spin-box {
+    height: fit-content;
+    width: inherit;
+    text-align: -webkit-center;
+    /** Mozilla browser window */
+    text-align: -moz-center;
+    padding-top: 16px;
+}
+
+#log-loader {
+    display: none;
+    position: absolute;
+    margin-left: -27px;
+    margin-top: 144px;
+}
+
+@media (min-width: 360px) {
+    .SignInContent {
+        margin-left: 49px;
+        margin-bottom: 83px;
+    }
+}
+
+@media (min-width: 375px) {
+    .SignInContent {
+        margin-left: 57px;
+        margin-bottom: 107px;
+    }
+}
+
+@media screen and (min-width: 375px) , screen and (min-height: 812px) {
+    .SignInContent {
+        margin-left: 57px;
+        margin-bottom: 277px;
+    }
+}
+
+@media (min-width: 414px) {
+    .SignInContent {
+        margin-left: 49px;
+        width: 324px;
+        margin-bottom: 178px;
+    }
+    .SignInForm {
+        width: 278px;
+    }
+    .SignBtn {
+        margin-left: 76px;
+    }
+}
+
+@media (min-width: 768px) {
+    .modal-log-area {
+        display: flex;
+        width: 550px;
+        padding-top: 11px;
+        font-size: 20px;
+    }
+    .SignInHeader {
+        margin-bottom: 25px;
+    }
+    .SignInContent {
+        margin-left: 121px;
+        height: 366px;
+        width: 535px;
+        margin-bottom: 307px;
+    }
+    .SignInForm, #sign-up-form {
+        width: 394px;
+    }
+    .SignBtn {
+        margin-left: 136px;
+    }
+    .SignNote {
+        padding-left: 70px;
+    }
+    #log-loader {
+        display: none;
+        position: absolute;
+        margin-top: 124px;
+    }
+    .cancel-log {
+        margin-top: -5px;
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .SignInContent {
+        margin-left: 247px;
+        margin-bottom: 482px;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .SignInContent {
+        margin-left: 467px;
+        margin-bottom: 258px;
+    }
+    .display-images {
+        height: 519px;
+    }
+}
+
+@media (min-width: 1583px) {
+    .SignInContent {
+        margin-left: 507px;
+        margin-bottom: 258px;
+    }
+}

@@ -5,6 +5,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
   devtool: 'cheap-module-eval-source-map',
+  devServer: {
+    contentBase: path.resolve(__dirname, './dist'),
+    historyApiFallback: true,
+  },
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
