@@ -15,7 +15,7 @@ const sideDrawer = (props) => (
       <div className={Classes.Seperator}></div>
       <NavLink to="/interventions" >INTERVENTIONS</NavLink>
       <div className={Classes.Seperator}></div>
-      <a href="./login.html">LOGIN</a>
+      <NavLink to="/auth/login" >LOGIN</NavLink>
       <div className={Classes.Seperator}></div>
       <a href="./signup.html">SIGN UP</a>
       <div className={Classes.Seperator}></div>

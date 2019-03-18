@@ -59,6 +59,10 @@
     margin: 6px 0;
 }
 
+.NavBar a {
+    text-decoration: none;
+}
+
 a.Logo {
     text-decoration: none;
     margin-left: 13px;

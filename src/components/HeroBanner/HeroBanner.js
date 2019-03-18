@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Classes from './HeroBanner.css';
 import Aux from '../../hoc/Aux';
 
@@ -12,7 +13,9 @@ const heroBanner = (props) => (
       Are you Ready To Fight Corruption?
     </h1>
     <div className={Classes.SmallScreenHeaderBtnBox}>
-      <button>Sign Up For Free</button>
+      <Link to="/signup">
+        <button>Sign Up For Free</button>
+      </Link>
     </div>
     <div className={Classes.Seperator}></div>
   </Aux>

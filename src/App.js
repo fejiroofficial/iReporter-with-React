@@ -5,6 +5,8 @@ import HomePage from './components/HomePage/HomePage';
 import AboutUsPage from './components/AboutUs/AboutUs';
 import CorruptEdu from './components/CorruptionEdu/CorruptionEdu';
 import Records from './components/Records/Records';
+import Login from './components/Login/Login';
+import SignUp from './components/Signup/Signup';
 
 
 
@@ -13,6 +15,8 @@ class App extends Component {
     return (
       <div>
         <Layout>
+          <Route path="/signup" exact component={SignUp} />
+          <Route path="/login" exact component={Login} />
           <Route path="/interventions" exact component={Records} />
           <Route path="/redflags" exact component={Records} />
           <Route path="/corruption" exact component={CorruptEdu} />
