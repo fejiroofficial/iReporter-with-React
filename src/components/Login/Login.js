@@ -1,6 +1,6 @@
+import { Link } from 'react-router-dom';
 import React from 'react';
 import Classes from './Login.css';
-import { Link } from 'react-router-dom';
 
 const login = () => (
   <div className={Classes.LoginBox}>
@@ -16,7 +16,7 @@ const login = () => (
 
       <div className={Classes.SignNote}>
         <p>Do not have an account? Create an account
-        <Link to=''>here...</Link>
+        <Link to='/signup'>here...</Link>
         </p>
       </div>
     </div>

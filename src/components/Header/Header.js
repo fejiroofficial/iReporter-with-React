@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Classes from './Header.css';
-import { NavLink } from 'react-router-dom';
+
 
 const header = (props) => (
   <div className={Classes.NavBar}>
@@ -9,9 +10,9 @@ const header = (props) => (
       <div className={Classes.LogoBox}>iReporter</div>
     </a>
     <p>Already have an account?</p>
-    <NavLink to="/login">
+    <Link to="/login">
       <div className={Classes.LoginBtn}>LOGIN</div>
-    </NavLink>
+    </Link>
   </div>
 );
 
