@@ -7,6 +7,7 @@ import CorruptEdu from './components/CorruptionEdu/CorruptionEdu';
 import Records from './components/Records/Records';
 import Login from './components/Login/Login';
 import SignUp from './components/Signup/Signup';
+import Report from './components/Report/Report';
 
 
 
@@ -15,6 +16,7 @@ class App extends Component {
     return (
       <div>
         <Layout>
+          <Route path="/ireport" exact component={Report} />
           <Route path="/signup" exact component={SignUp} />
           <Route path="/login" exact component={Login} />
           <Route path="/interventions" exact component={Records} />

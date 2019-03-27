@@ -13,6 +13,8 @@ const NavigationItems = (props) => (
     <div className={Classes.Seperator}></div>
     <NavLink to="/interventions" >INTERVENTIONS</NavLink>
     <div className={Classes.Seperator}></div>
+    <NavLink to="/ireport" >IREPORT</NavLink>
+    <div className={Classes.Seperator}></div>
   </div>
 );
 
