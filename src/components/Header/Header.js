@@ -6,7 +6,7 @@ import Classes from './Header.css';
 const header = (props) => (
   <div className={Classes.NavBar}>
     <main>{props.children}</main>
-    <a className={Classes.Logo} href="./index.html">
+    <a className={Classes.Logo} href="/">
       <div className={Classes.LogoBox}>iReporter</div>
     </a>
     <p>Already have an account?</p>

@@ -1,11 +1,7 @@
 import React from 'react';
 import Classes from './CorruptionEdu.css';
 
-const corruptEdu = () => (
-  // <div className={Classes.LearnContent}>
-  //        <h1>I am working mhen!!!</h1>
-  // </div>
- 
+const corruptEdu = () => ( 
   <div className={Classes.LearnContent}>
   <div className={Classes.LearnContentHeader}>WHAT IS CORRUPTION</div>
   <div className={Classes.LearnContentTitle}>OUR DEFINITION OF CORRUPTION</div>
