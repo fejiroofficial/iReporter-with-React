@@ -1,3 +1,7 @@
+/* eslint-disable import/no-named-as-default-member */
+/* eslint-disable import/no-named-as-default */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
@@ -8,8 +12,6 @@ import Records from './components/Records/Records';
 import Login from './components/Login/Login';
 import SignUp from './components/Signup/Signup';
 import Report from './components/Report/Report';
-
-
 
 class App extends Component {
   render() {
