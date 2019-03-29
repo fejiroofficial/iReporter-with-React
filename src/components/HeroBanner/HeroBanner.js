@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom';
 import Classes from './HeroBanner.css';
 import Aux from '../../hoc/Aux';
 
-const heroBanner = (props) => (
+const heroBanner = props => (
   <Aux>
     <div className={Classes.HeroBanner}>
       <h1>Are you Ready To Fight Corruption?</h1>
-      <button>Sign Up For Free</button>
+      <Link to="/signup">
+        <button>Sign Up For Free</button>
+      </Link>
     </div>
     <h1 className={Classes.SmallScreenH1}>
       Are you Ready To Fight Corruption?

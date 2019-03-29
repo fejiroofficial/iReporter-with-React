@@ -76,6 +76,26 @@ a.Logo {
     margin-top: 10px;
 }
 
+.AuthBox {
+    display: flex;
+    height: inherit;
+    width: -webkit-fill-available;
+    margin-left: 700px;
+}
+
+.InitAuthBox {
+    display: flex;
+    height: inherit;
+    width: -webkit-fill-available;
+    margin-left: 300px;
+}
+
+.AuthBoxName {
+    margin-top: 20px;
+    font-size: 19px;
+    margin-left: 7px;
+}
+
 
 @media (min-width: 360px) {
     a.Logo {
