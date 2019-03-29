@@ -18,6 +18,7 @@
 
 .HeroBanner button {
   display: none;
+  cursor: pointer;
 }
 
 .SmallScreenH1 {
@@ -95,6 +96,9 @@
     }
     .HeroBanner button:hover {
       background-color: #1f8983;
+    }
+    .HeroBanner a {
+      text-decoration: none;
     }
     .SmallScreenH1 {
       display: none;
