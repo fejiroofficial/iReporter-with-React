@@ -14,4 +14,4 @@ const parseJwt = (token) => {
   }
 }
 
-export default parseJwt; 
+export default parseJwt;

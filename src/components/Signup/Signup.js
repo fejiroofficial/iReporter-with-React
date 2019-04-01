@@ -93,7 +93,7 @@ const signUp = (props) => {
         </div>
       </div>
     </div>
-  )
+  );
 };
 
 export default connect(() => ({}), { successToast, failureToast, signupUser })(signUp);
