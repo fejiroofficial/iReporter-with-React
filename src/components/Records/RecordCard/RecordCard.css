@@ -13,7 +13,7 @@
 
 .IconHolder {
   height: fit-content;
-  width: 430px;
+  width: 383px;
 }
 
 .RedFlagIcon {
@@ -27,13 +27,12 @@
 }
 
 .Details {
-  width: 205px;
   float: right;
 }
 
 .DetailsHolder {
   height: fit-content;
-  width: 500px;
+  width: 370px;
 }
 
 .NameDateDiv{
@@ -46,6 +45,7 @@
 
 .DateDiv {
   font-size: 12px;
+  width: 138px;
 }
 
 .RecordCard .Comment {
@@ -60,12 +60,15 @@
 
 .InfoPanel {
   height: 50px;
-  width: inherit;
+  width: fit-content;
   display: flex;
 }
 
 .CardFooter {
   display: flex;
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .CardFooter button {
@@ -78,6 +81,10 @@
   border-color: none;
   cursor: pointer;
 }
+
+.StatusHolder {
+  width: 200px;
+} 
 
 @media (min-width: 360px) {
   .RecordCard {
