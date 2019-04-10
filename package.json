@@ -42,6 +42,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "dateformat": "^3.0.3",
     "eslint": "^5.14.0",
     "eslint-config-airbnb": "^17.1.0",
     "react": "^16.8.2",
