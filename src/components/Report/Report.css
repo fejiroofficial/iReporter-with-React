@@ -15,16 +15,30 @@
     display: inline;
 }
 
+.PacCardImageInput {
+    margin-left: 14px;
+}
+
+.AutoCompleteContainer {
+    color: #7e7e7e;
+    font-size: 12px;
+    width: inherit;
+    margin-left: 14px;
+}
+
 .PacCard {
     margin: 10px 10px 0 0;
     border-radius: 2px 0 0 2px;
     box-sizing: border-box;
-    width: 299px;
+    width: fit-content;
+    margin-left: 69px;
     -moz-box-sizing: border-box;
     outline: none;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     background-color: #fff;
     min-height: 467px;
+    position: absolute;
+    z-index: 10;
 }
 
 .PacTitle {
@@ -41,6 +55,17 @@
     margin-top: 24px;
 }
 
+.PacFile input {
+    margin-left: 12px;
+    border-width: thin;
+    border-style: solid;
+    height: 34px;
+    font-size: 13px;
+    border-color: #bfbfbf;
+    color: lightseagreen;
+    padding-top: 5px;
+}
+
 .PacInput {
     background-color: #fff;
     font-family: inherit;
@@ -52,6 +77,16 @@
     width: 276px;
     height: 45px;
     outline-color: lightseagreen;
+    color: #7e7e7e;
+    border-style: solid;
+    border-width: thin;
+    border-color: #bfbfbf;
+}
+
+.PacInput .CameraIcon {
+    margin-left: 108px;
+    margin-left: 108px;
+    cursor: pointer;
 }
 
 .ReportBtn {
@@ -83,7 +118,11 @@
     font-weight: bold;
     outline: none;
     font-family: inherit;
+    border-style: solid;
     font-size: 15px;
+    border-width: thin;
+    border-color: #bfbfbf;
+    background-color: white;
 }
 
 .UserComment {
@@ -96,5 +135,17 @@
     font-size: 15px;
     font-weight: lighter;
     outline-color: lightseagreen;
+    border-style: solid;
+    border-width: thin;
+    border-color: #bfbfbf;
+}
+
+.CameraIcon {
+    height: 30px;
+    width: 30px;
+    background-image: url('../../assets/img/icon-basic-set_12-camera-512.png');
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
