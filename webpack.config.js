@@ -1,6 +1,9 @@
 const path = require('path');
 const autoprefixer = require('autoprefixer');
+const Dotenv = require('dotenv-webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+const dotenvPlugin = new Dotenv();
 
 module.exports = {
   mode: 'development',
@@ -67,6 +70,7 @@ module.exports = {
       filename: 'index.html',
       inject: 'body',
       stats: { children: false },
-    })
+    }),
+    dotenvPlugin
   ]
 };

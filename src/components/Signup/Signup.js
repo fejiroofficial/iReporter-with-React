@@ -7,8 +7,8 @@ import { successToast, failureToast } from '../../actions/toast';
 import { signupUser } from '../../actions/auth';
 import Classes from './Signup.css';
 import { ToastContainer } from 'react-toastify';
-import Spinner from '../spinner/Spinner';
-// import 'react-toastify/dist/ReactToastify.css';
+import { ClipLoader } from 'react-spinners';
+
 
 const signUp = (props) => {
 
@@ -63,32 +63,40 @@ const signUp = (props) => {
       <div className={Classes.SignUpContent}>
         <ToastContainer autoClose={5000} />
         <div className={Classes.SignUpHeader}>Create an Account</div>
-        <form className={Classes.SignUpForm}>
-          <label for='Username'>Username</label>
-          <input type='text' name='username' className="input-field" placeholder="Enter username" required onChange={(event) => updateInput(event)}></input>
-          <label for='firstname'>First name</label>
-          <input type='text' name='firstname' className="input-field" placeholder="Enter first name" required onChange={(event) => updateInput(event)}></input>
-          <label for='lastname'>Last name</label>
-          <input type='text' name='lastname' className="input-field" placeholder="Enter last name" required onChange={(event) => updateInput(event)}></input>
-          <label for='othernames'>Other names</label>
-          <input type='text' name='othernames' className="input-field" placeholder="Enter other names" required onChange={(event) => updateInput(event)}></input>
-          <label for='email'>Email</label>
-          <input type='text' name='email' className="input-field" placeholder="Enter email" required onChange={(event) => updateInput(event)}></input>
-          <label for='telephone'>Telephone</label>
-          <input type='text' name='telephone' className="input-field" placeholder="Enter telephone" required onChange={(event) => updateInput(event)}></input>
-          <label for='Password'>Password</label>
-          <input type='text' name='password' className="input-field" id='log-password' placeholder="Enter Password" required onChange={(event) => updateInput(event)}></input>
+        <form className={Classes.SignUpForm} >
+          <label htmlFor="Username">Username</label>
+          <input type="text" name="username" className="input-field" placeholder="Enter username" required onChange={(event) => updateInput(event)} />
+          <label htmlFor="firstname">First name</label>
+          <input type="text" name="firstname" className="input-field" placeholder="Enter first name" required onChange={(event) => updateInput(event)} />
+          <label htmlFor="lastname">Last name</label>
+          <input type="text" name="lastname" className="input-field" placeholder="Enter last name" required onChange={(event) => updateInput(event)} />
+          <label htmlFor="othernames">Other names</label>
+          <input type="text" name="othernames" className="input-field" placeholder="Enter other names" required onChange={(event) => updateInput(event)} />
+          <label htmlFor="email">Email</label>
+          <input type="text" name="email" className="input-field" placeholder="Enter email" required onChange={(event) => updateInput(event)} />
+          <label htmlFor="telephone">Telephone</label>
+          <input type="text" name="telephone" className="input-field" placeholder="Enter telephone" required onChange={(event) => updateInput(event)} />
+          <label htmlFor="Password">Password</label>
+          <input type="text" name="password" className="input-field" id="log-password" placeholder="Enter Password" required onChange={(event) => updateInput(event)} />
           <button
             className={Classes.SignBtn}
             onClick={(event) => validateUserData(event)}
             disabled={loading}
           >
-            {loading ? <Spinner loading={loading} /> : 'Sign up'}
+            {loading 
+              ? 
+              <div className="reset_spinner_box">
+                <ClipLoader
+                  size={30}
+                  color="white"
+                />
+              </div>
+              : 'Sign up'}
           </button>
         </form>
         <div className={Classes.SignNote}>
           <p>Do not have an account? Create an account
-          <Link to='/login'>here...</Link>
+          <Link to="/login">here...</Link>
           </p>
         </div>
       </div>
