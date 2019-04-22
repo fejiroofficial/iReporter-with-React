@@ -4,7 +4,7 @@
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import Layout from './components/Layout/Layout';
+import Layout from './components/Layout';
 import HomePage from './components/HomePage/HomePage';
 import AboutUsPage from './components/AboutUs/AboutUs';
 import CorruptEdu from './components/CorruptionEdu/CorruptionEdu';
@@ -13,6 +13,7 @@ import InterventionRecords from './components/Records/Interventions'
 import Login from './components/Login/Login';
 import SignUp from './components/Signup/Signup';
 import Report from './components/Report/Report';
+import SpecificRecords from './components/Records/SpecificRecord';
 
 class App extends Component {
   render() {
@@ -26,6 +27,7 @@ class App extends Component {
           <Route path="/ireport/red-flags" exact component={RedflagRecords} />
           <Route path="/corruption" exact component={CorruptEdu} />
           <Route path="/about" exact component={AboutUsPage} />
+          <Route path="/ireport/:recordType/:id" exact component={SpecificRecords} />
           <Route path="/" exact component={HomePage} />
         </Layout>
       </div>

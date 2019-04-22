@@ -8,7 +8,7 @@ import Footer from '../Footer/Footer';
 import ToggleMenu from '../ToggleHandler/ToggleHandler';
 import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
 
-class layout extends Component {
+class Layout extends Component {
   state = {
     showSideDrawer: false,
   }
@@ -35,4 +35,4 @@ class layout extends Component {
   }
 }
 
-export default layout;
+export default Layout;
