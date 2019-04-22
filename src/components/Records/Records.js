@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import dateFormat from 'dateformat';
 import Aux from '../../hoc/Aux';
@@ -17,8 +17,11 @@ const records = (props) => {
     });
   };
 
+  useEffect(() => (
+    getRecordsHandler()
+  ));
+
   return (
-    getRecordsHandler(),
     <Aux>
       <div className={Classes.ManagerTitleHeader}>iManager</div>
       <div className={Classes.RecordContainer}>
