@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { REPORT_LOADING, REPORT_SUCCESS } from './actionTypes';
+import { REPORT_LOADING, REPORT_SUCCESS, REPORT_FAILURE } from './actionTypes';
 
 const apiUrl = 'https://ireporter-app.herokuapp.com';
 
@@ -26,11 +26,10 @@ export const reportIncident = (requestData, props) => {
         loading: false,
         message: false,
       });
-      // redirection here
       props.history.push(`/ireport/${incidentType}/${data.data[0].record.id}`);
     } catch (error) {
       dispatch({
-        type: REPORT_SUCCESS,
+        type: REPORT_FAILURE,
         loading: false,
         message: error.response.data.errors,
       });
@@ -38,3 +37,14 @@ export const reportIncident = (requestData, props) => {
     }
   };
 };
+
+export const setMapAction = (latitude, longitude) => {
+  return (dispatch) => {
+    dispatch({
+      type: 'REPORT_MAP_LOADING',
+      latitude,
+      longitude,
+    });
+  };
+};
+

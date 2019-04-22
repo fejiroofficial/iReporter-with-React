@@ -8,12 +8,12 @@ import PlacesAutocomplete, {
 } from 'react-places-autocomplete';
 import GoogleMapReact from 'google-map-react';
 import { ClipLoader } from 'react-spinners';
-import {  failureToast } from '../../actions/toast';
+import { failureToast } from '../../actions/toast';
 import { ToastContainer } from 'react-toastify';
 import CloudinaryWidget from '../CloudinaryWidget';
 import Classes from './Report.css';
 import Aux from '../../hoc/Aux';
-import { reportIncident } from '../../actions/report';
+import { reportIncident, setMapAction } from '../../actions/report';
 
 
 const Report = (props) => {
@@ -44,11 +44,15 @@ const Report = (props) => {
         setLocation(results[0].formatted_address);
         return getLatLng(results[0]);
       })
-      .then(latLng => setFormData({
-        ...formData,
-        latitude: latLng.lat,
-        longitude: latLng.lng,
-      }))
+      .then(latLng => {
+        //dispatch an action here to update the map
+        props.setMapAction(latLng.lat, latLng.lng);
+        setFormData({
+          ...formData,
+          latitude: latLng.lat,
+          longitude: latLng.lng,
+        });
+      })
       .catch(error => props.failureToast(error));
   };
 
@@ -165,16 +169,16 @@ const Report = (props) => {
           onClick={() => handleSubmit()}>
           {
             isLoading
-            ?
+              ?
               <div className="reset_spinner_box">
                 <ClipLoader
                   size={30}
                   color="white"
                 />
               </div>
-            : 'iReport'
+              : 'iReport'
           }
-          </button>
+        </button>
 
         <div className="geo-display" id="geo-dis" />
       </div>
@@ -196,7 +200,9 @@ const Report = (props) => {
 const mapStateToProps = state => (
   {
     isLoading: state.reportReducer.loading,
+    latitude: state.reportReducer.latitude,
+    longitude: state.reportReducer.longitude,
   }
 );
 
-export default connect(mapStateToProps, { failureToast, reportIncident })(Report);
+export default connect(mapStateToProps, { failureToast, reportIncident, setMapAction })(Report);

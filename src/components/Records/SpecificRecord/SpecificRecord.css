@@ -14,15 +14,6 @@
   text-align: -webkit-center;
 }
 
-.RecordDocumentImage {
-  height: 174px;
-  width: 160px;
-  background-image: url(/images/bridge.jpg);
-  background-size: cover;
-  background-position: 50%;
-  background-repeat: no-repeat;
-}
-
 .RecordDocumentComment {
     padding: 27px;
     min-height: 315px;
@@ -33,16 +24,6 @@
     border-width: 5px;
     border-radius: 8px;
 
-}
-
-.PhotoEvidence {
-    height: 315px;
-    margin-top: 5px;
-    width: inherit;
-    background-image: url(/images/bridge.jpg);
-    background-size: cover;
-    background-position: 50%;
-    background-repeat: no-repeat;
 }
 
 .LocationEvidence {
@@ -92,7 +73,7 @@
   width: 53px;
   margin-top: 10px;
   margin-left: -3px;
-  background-image: url(/images/editIcon.png);
+  background-image: url('../../../assets/img/editIcon.png');
   background-size: contain;
   background-position: 50%;
   background-repeat: no-repeat;
