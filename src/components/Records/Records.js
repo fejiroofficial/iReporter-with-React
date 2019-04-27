@@ -19,7 +19,7 @@ const records = (props) => {
 
   useEffect(() => (
     getRecordsHandler()
-  ));
+  ), []);
 
   return (
     <Aux>
@@ -36,6 +36,8 @@ const records = (props) => {
               status={userRecord.status}
               date={dateFormat(userRecord.createdon)}
               image={userRecord.profile_image}
+              recordId={userRecord.id}
+              recordType={userRecord.type}
             />
           )) : null
         }
