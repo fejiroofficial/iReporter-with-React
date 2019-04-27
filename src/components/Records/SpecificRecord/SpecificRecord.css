@@ -47,7 +47,7 @@
 }
 
 .ReportDocumentDetailPhoto {
-	height: 360px;
+	min-height: 360px;
 	width: 577px;
 }
 
@@ -90,4 +90,28 @@
 		font-size: 15px;
 		cursor: pointer;
 		outline: none;
+}
+
+.ModalTextarea {
+    height: 181px;
+    width: 458px;
+    font-size: inherit;
+    padding: 12px
+}
+
+.ModalBtn {
+    background-color: lightseagreen;
+    height: 40px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.ModalCancelBtn {
+    float: right;
+    border: none;
+    margin-bottom: 13px;
+    font-weight: bold;
 }

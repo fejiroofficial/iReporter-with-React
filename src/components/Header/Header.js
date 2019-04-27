@@ -5,7 +5,6 @@ import parseJwt from '../../hoc/decodeToken';
 
 
 const header = (props) => {
-  // const [token, setToken] = useState(false);
   let username;
   let profileImage;
   const token = localStorage.getItem('token');
