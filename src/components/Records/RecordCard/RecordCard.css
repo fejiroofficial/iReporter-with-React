@@ -2,7 +2,6 @@
   display: block;
   height: 313px;
   width: 301px;
-  margin-left: 10px;
   display: flex;
   flex-wrap: wrap;
   padding-left: 9px;
@@ -11,9 +10,18 @@
   margin-bottom: 16px;
 }
 
+.RecordCardContainer {
+    text-decoration: none;
+    color: #383838;
+}
+
+.MoreBtn {
+    margin-left: 8px;
+}
+
 .IconHolder {
   height: fit-content;
-  width: 383px;
+  margin-left: 62px;
 }
 
 .RedFlagIcon {
@@ -23,7 +31,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  float: right;
 }
 
 .Details {
@@ -89,7 +96,6 @@
 @media (min-width: 360px) {
   .RecordCard {
     display: block;
-    margin-left: 30px;
   }
 }
 
@@ -98,7 +104,10 @@
     display: block;
     padding-left: 24px;
     width: 340px;
-    margin-left: 16px;
+  }
+  .IconHolder {
+    height: fit-content;
+    margin-left: 75px;
   }
 }
 
@@ -107,7 +116,6 @@
     display: block;
     padding-left: 24px;
     width: 340px;
-    margin-left: 38px;
   }
 }
 
@@ -118,7 +126,10 @@
     padding-top: 19px;
     width: 615px;
     min-height: 180px;
-    margin-left: 91px;
+  }
+  .IconHolder {
+    height: fit-content;
+    margin-left: 350px;
   }
 }
 
@@ -126,20 +137,17 @@
   .RecordCard {
     display: block;
     padding-left: 15px;
-    margin-left: 209px;
   }
 }
 
 @media (min-width: 1359px) {
   .RecordCard {
     display: block;
-    margin-left: 423px;
   }
 }
 
 @media (min-width: 1583px) {
   .RecordCard {
     display: block;
-    margin-left: 504px;
   }
 }

@@ -6,21 +6,21 @@ const sideDrawer = (props) => (
   <div className={Classes.Overlay}>
     <button onClick={props.clicked} className={Classes.Closebtn}>&times;</button>
     <div className={Classes.OverlayContent}>
-      <div className={Classes.Seperator}></div>
+      <div className={Classes.Seperator} />
       <NavLink to="/about" >ABOUT US</NavLink>
-      <div className={Classes.Seperator}></div>
+      <div className={Classes.Seperator} />
       <NavLink to="/corruption" >LEARN ABOUT CORRUPTION</NavLink>
-      <div className={Classes.Seperator}></div>
+      <div className={Classes.Seperator} />
       <NavLink to="/redflags" >REDFLAGS</NavLink>
-      <div className={Classes.Seperator}></div>
+      <div className={Classes.Seperator} />
       <NavLink to="/interventions" >INTERVENTIONS</NavLink>
-      <div className={Classes.Seperator}></div>
-      <NavLink to="/auth/login" >LOGIN</NavLink>
-      <div className={Classes.Seperator}></div>
-      <a href="./signup.html">SIGN UP</a>
-      <div className={Classes.Seperator}></div>
+      <div className={Classes.Seperator} />
+      <NavLink to="/login" >LOGIN</NavLink>
+      <div className={Classes.Seperator} />
+      <NavLink to="/signup" >SIGN UP</NavLink>
+      <div className={Classes.Seperator} />
     </div >
   </div >
-)
+);
 
 export default sideDrawer;
