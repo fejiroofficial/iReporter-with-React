@@ -4,7 +4,7 @@ import MiniHolder from '../MiniHolder/MiniHolder';
 import Classes from './HomePage.css';
 import Aux from '../../hoc/Aux';
 
-const homePage = (props) => (
+const homePage = () => (
   <Aux>
     <HeroBanner />
     <MiniHolder header='OUR WORK IS IMPORTANT'>

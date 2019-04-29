@@ -1,5 +1,5 @@
 .LearnContent {
-    min-height: 685px;
+    height: -webkit-fill-available;
     width: inherit;
     padding-left: 10px;
 }
@@ -26,29 +26,24 @@
 
 @media (min-width: 768px) {
     .LearnContent {
-        min-height: 685px;
         width: inherit;
         padding-top: 39px;
         padding-left: 51px;
         padding-right: 62px;
-        margin-bottom: 211px;
     }
 }
 
 @media (min-width: 1024px) {
     .LearnContent {
-        min-height: 685px;
         width: inherit;
         padding-left: 66px;
         padding-top: 39px;
         padding-right: 62px;
-        margin-bottom: 561px;
     }
 }
 
 @media (min-width: 1440px) {
     .LearnContent {
-        min-height: 685px;
         width: inherit;
         padding-left: 184px;
         padding-top: 39px;

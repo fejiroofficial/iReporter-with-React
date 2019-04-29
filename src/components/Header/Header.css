@@ -77,10 +77,11 @@ a.Logo {
 }
 
 .AuthBox {
-    display: flex;
+    display: none;
     height: inherit;
+    justify-content: flex-end;
+    margin-right: 80px;
     width: -webkit-fill-available;
-    margin-left: 700px;
 }
 
 .InitAuthBox {
@@ -172,13 +173,15 @@ a.Logo {
         margin-top: 15px;
         width: 100px;
         display: block;
-    }  
+    }
+    .AuthBox {
+        display: flex;
+        height: inherit;
+        width: -webkit-fill-available;
+    }
 }
 
 @media (min-width: 1359px) {
-    a.Logo {
-        margin-left: 185px;
-    }
     .LoginBtn {
         margin-left: 10px;
         margin-top: 15px;
