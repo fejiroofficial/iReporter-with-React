@@ -6,8 +6,12 @@
   "scripts": {
     "test": "jest --coverage",
     "test:watch": "npm test -- --watch",
-    "start": "webpack-dev-server",
-    "coverage": "nyc report --reporter=text-lcov --reporter=lcov | coveralls"
+    "start": "babel-node index",
+    "build": "rm -rf dist && webpack --mode production --env.production",
+    "serve": " npm run build && npm run start",
+    "start:dev": "webpack-dev-server --mode development --open --env.NODE_ENV=local",
+    "heroku-postbuild": "rm -rf dist && NPM_CONFIG_PRODUCTION=false npm run build",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "jest": {
     "snapshotSerializers": [
@@ -29,6 +33,7 @@
   "homepage": "https://github.com/fejiroofficial/iReporter-with-React#readme",
   "devDependencies": {
     "@babel/core": "^7.4.4",
+    "@babel/node": "^7.2.2",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/plugin-transform-runtime": "^7.4.4",
@@ -66,6 +71,7 @@
     "dotenv-webpack": "^1.7.0",
     "eslint": "^5.14.0",
     "eslint-config-airbnb": "^17.1.0",
+    "express": "^4.16.4",
     "fetch-mock": "^7.3.3",
     "google-map-react": "^1.1.4",
     "istanbul": "^0.4.5",
