@@ -26,7 +26,7 @@ export const reportIncident = (requestData, props) => {
         loading: false,
         message: false,
       });
-      props.history.push(`/ireport/${incidentType}/${data.data[0].record.id}`);
+      props.history.push(`/user/ireport/${incidentType}/${data.data[0].record.id}`);
     } catch (error) {
       dispatch({
         type: REPORT_FAILURE,

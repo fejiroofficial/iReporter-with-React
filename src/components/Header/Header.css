@@ -97,6 +97,36 @@ a.Logo {
     margin-left: 7px;
 }
 
+.AuthCircleName:hover .DropdownContent {
+    display: block;
+}
+
+.DropdownContent {
+    display: none;
+    margin-top: 18px;
+    margin-left: 0px;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 129px;
+    text-align: -webkit-center;
+    color: #4c4646;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.DropItem {
+    width: inherit;
+    height: 32px;
+    padding-top: 4px;
+    font-weight: bold;
+}
+
+.DropItem:hover {
+    color: white;
+    background-color: lightseagreen;
+}
+
 
 @media (min-width: 360px) {
     a.Logo {
