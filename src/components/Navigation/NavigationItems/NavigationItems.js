@@ -1,21 +1,39 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import Classes from './NavigationItems.css';
 
-const NavigationItems = (props) => (
-  <div id="myNav" className={Classes.LargeScreenNav}>
-    <div className={Classes.Seperator}></div>
-    <NavLink to="/about" >ABOUT US</NavLink>
-    <div className={Classes.Seperator}></div>
-    <NavLink to="/corruption" >LEARN ABOUT CORRUPTION</NavLink>
-    <div className={Classes.Seperator}></div>
-    <NavLink to="/ireport/red-flags">REDFLAGS</NavLink>
-    <div className={Classes.Seperator}></div>
-    <NavLink to="/ireport/interventions">INTERVENTIONS</NavLink>
-    <div className={Classes.Seperator}></div>
-    <NavLink to="/ireport" >IREPORT</NavLink>
-    <div className={Classes.Seperator}></div>
-  </div>
+const NavigationItems = props => {
+  const { isLoggedIn } = props;
+  return (
+    <div id="myNav" className={Classes.LargeScreenNav}>
+      <div className={Classes.Seperator} />
+      <NavLink to="/about" >ABOUT US</NavLink>
+      <div className={Classes.Seperator} />
+      <NavLink to="/corruption" >LEARN ABOUT CORRUPTION</NavLink>
+      <div className={Classes.Seperator} />
+      {
+        isLoggedIn
+          ?
+          <>
+          <NavLink to="/user/ireport/red-flags">REDFLAGS</NavLink>
+          <div className={Classes.Seperator} />
+          <NavLink to="/user/ireport/interventions">INTERVENTIONS</NavLink>
+          <div className={Classes.Seperator} />
+          <NavLink to="/user/ireport" >IREPORT</NavLink>
+          <div className={Classes.Seperator} />
+          </>
+          : null
+      }
+    </div>
+  );
+};
+
+const mapStateToProps = state => (
+  {
+    isLoggedIn: state.authReducer.isLoggedIn,
+  }
 );
 
-export default NavigationItems;
+export default connect(mapStateToProps, {})(NavigationItems);
+
