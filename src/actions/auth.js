@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { SIGN_UP, SIGN_IN } from './actionTypes';
+import { SIGN_UP, SIGN_IN_SUCCESS, SIGN_IN_FAILURE, LOG_OUT } from './actionTypes';
 
 // const apiUrl = 'http://localhost:4000';
 
@@ -32,17 +32,24 @@ export const loginUser = userData => {
       const { data } = await axios.post(`${apiUrl}/api/v1/auth/login`, { ...userData });
       localStorage.setItem('token', data.token);
       dispatch({
-        type: SIGN_IN,
+        type: SIGN_IN_SUCCESS,
         user: userData,
       });
       return data;
     } catch (error) {
       dispatch({
-        type: SIGN_IN,
+        type: SIGN_IN_FAILURE,
         user: {}
       });
       return error.response.data;
     }
   };
+};
+
+export const logOut = () => async (dispatch) => {
+  localStorage.removeItem('token');
+  dispatch({
+    type: LOG_OUT,
+  });
 };
 

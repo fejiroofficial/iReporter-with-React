@@ -47,6 +47,11 @@ describe('user SIGN_UP action', () => {
   });
 });
 
+const userData = {
+  email: 'gpsparks@rocketmail.com',
+  password: '123456'
+};
+
 describe('user SIGN_IN action', () => {
   afterEach(() => {
     fetchMock.restore();
@@ -54,16 +59,18 @@ describe('user SIGN_IN action', () => {
 
   it('creates SUCCESS when request has been done', () => {
     fetchMock.postOnce('/api/v1/auth/login', {
-      body: { userData: ['do something'] },
+      body: {
+        userData,
+      },
       headers: { 'content-type': 'application/json' }
     });
 
     const expectedActions = [
-      { type: types.SIGN_IN, user: {} },
+      { type: types.SIGN_IN_SUCCESS, user: userData },
     ];
     const store = mockStore({ authReducer: {} });
 
-    return store.dispatch(actions.loginUser()).then(() => {
+    return store.dispatch(actions.loginUser(userData)).then(() => {
       // return of async actions
       expect(store.getActions()).toEqual(expectedActions);
     });
@@ -75,7 +82,7 @@ describe('user SIGN_IN action', () => {
     });
 
     const expectedActions = [
-      { type: types.SIGN_IN, user: {} },
+      { type: types.SIGN_IN_FAILURE, user: {} },
     ];
     const store = mockStore({ authReducer: {} });
 
