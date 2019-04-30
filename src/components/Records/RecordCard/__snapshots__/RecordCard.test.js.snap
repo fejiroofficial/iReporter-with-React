@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RecordCard> should render without crashing 1`] = `
+<Link
+  replace={false}
+  to="/ireport/undefineds/undefined"
+>
+  <div>
+    <div>
+      <displayPicture />
+      <div>
+        <div>
+          undefined undefined
+        </div>
+        <div />
+      </div>
+      <div>
+        <div />
+      </div>
+    </div>
+    <div />
+    <div>
+      <div>
+        Status: 
+      </div>
+      <div>
+        <div>
+          For more details click
+          <Link
+            replace={false}
+            to="/ireport/undefineds/undefined"
+          >
+            <button>
+              here
+            </button>
+          </Link>
+        </div>
+      </div>
+    </div>
+  </div>
+</Link>
+`;

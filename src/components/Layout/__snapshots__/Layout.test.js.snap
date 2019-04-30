@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Layout> should render without crashing 1`] = `
+<aux>
+  <Connect(header)>
+    <toggleMenu
+      clicked={[Function]}
+    />
+  </Connect(header)>
+  <toolBar />
+  <main>
+    <p>
+      Hello
+    </p>
+  </main>
+  <footer />
+</aux>
+`;

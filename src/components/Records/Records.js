@@ -26,20 +26,32 @@ const records = (props) => {
       <div className={Classes.ManagerTitleHeader}>iManager</div>
       <div className={Classes.RecordContainer}>
         {
-          userRecords ?
-          userRecords.map((userRecord, index) => (
+          userRecords && userRecords.length !== 0 ?
+            userRecords.map((userRecord, index) => (
+              <RecordCard
+                key={index}
+                firstname={userRecord.firstname}
+                lastname={userRecord.lastname}
+                comment={userRecord.comment}
+                status={userRecord.status}
+                date={dateFormat(userRecord.createdon)}
+                image={userRecord.profile_image}
+                recordId={userRecord.id}
+                recordType={userRecord.type}
+              />
+            ))
+            : <div className={Classes.EmptyRecordContainer}>
             <RecordCard
-              key={index}
-              firstname={userRecord.firstname}
-              lastname={userRecord.lastname}
-              comment={userRecord.comment}
-              status={userRecord.status}
-              date={dateFormat(userRecord.createdon)}
-              image={userRecord.profile_image}
-              recordId={userRecord.id}
-              recordType={userRecord.type}
+              firstname=""
+              lastname=""
+              comment="*You currently have no red-flag records"
+              status=""
+              date=""
+              image=""
+              recordId=""
+              recordType=""
             />
-          )) : null
+            </div>
         }
       </div>
     </Aux>

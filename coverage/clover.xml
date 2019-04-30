@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1556613060772" clover="3.2.0">
-  <project timestamp="1556613060772" name="All files">
-    <metrics statements="76" coveredstatements="62" conditionals="0" coveredconditionals="0" methods="12" coveredmethods="10" elements="88" coveredelements="72" complexity="0" loc="76" ncloc="76" packages="1" files="3" classes="3"/>
+<coverage generated="1556753338609" clover="3.2.0">
+  <project timestamp="1556753338610" name="All files">
+    <metrics statements="109" coveredstatements="85" conditionals="0" coveredconditionals="0" methods="22" coveredmethods="14" elements="131" coveredelements="99" complexity="0" loc="109" ncloc="109" packages="1" files="6" classes="6"/>
     <file name="actionTypes.js" path="/Users/fejirogospel/Documents/GitHub/iReporter-with-React/src/actions/actionTypes.js">
       <metrics statements="20" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <line num="1" count="2" type="stmt"/>
-      <line num="2" count="2" type="stmt"/>
-      <line num="3" count="2" type="stmt"/>
-      <line num="4" count="2" type="stmt"/>
-      <line num="5" count="2" type="stmt"/>
-      <line num="6" count="2" type="stmt"/>
-      <line num="7" count="2" type="stmt"/>
-      <line num="8" count="2" type="stmt"/>
-      <line num="9" count="2" type="stmt"/>
-      <line num="10" count="2" type="stmt"/>
-      <line num="11" count="2" type="stmt"/>
-      <line num="12" count="2" type="stmt"/>
-      <line num="13" count="2" type="stmt"/>
-      <line num="14" count="2" type="stmt"/>
-      <line num="15" count="2" type="stmt"/>
-      <line num="16" count="2" type="stmt"/>
-      <line num="17" count="2" type="stmt"/>
-      <line num="18" count="2" type="stmt"/>
-      <line num="19" count="2" type="stmt"/>
-      <line num="20" count="2" type="stmt"/>
+      <line num="1" count="15" type="stmt"/>
+      <line num="2" count="15" type="stmt"/>
+      <line num="3" count="15" type="stmt"/>
+      <line num="4" count="15" type="stmt"/>
+      <line num="5" count="15" type="stmt"/>
+      <line num="6" count="15" type="stmt"/>
+      <line num="7" count="15" type="stmt"/>
+      <line num="8" count="15" type="stmt"/>
+      <line num="9" count="15" type="stmt"/>
+      <line num="10" count="15" type="stmt"/>
+      <line num="11" count="15" type="stmt"/>
+      <line num="12" count="15" type="stmt"/>
+      <line num="13" count="15" type="stmt"/>
+      <line num="14" count="15" type="stmt"/>
+      <line num="15" count="15" type="stmt"/>
+      <line num="16" count="15" type="stmt"/>
+      <line num="17" count="15" type="stmt"/>
+      <line num="18" count="15" type="stmt"/>
+      <line num="19" count="15" type="stmt"/>
+      <line num="20" count="15" type="stmt"/>
     </file>
     <file name="auth.js" path="/Users/fejirogospel/Documents/GitHub/iReporter-with-React/src/actions/auth.js">
-      <metrics statements="23" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="4"/>
-      <line num="6" count="1" type="stmt"/>
-      <line num="9" count="1" type="stmt"/>
-      <line num="10" count="2" type="stmt"/>
-      <line num="11" count="2" type="stmt"/>
-      <line num="12" count="2" type="stmt"/>
+      <metrics statements="22" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="4"/>
+      <line num="6" count="5" type="stmt"/>
+      <line num="9" count="5" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
       <line num="13" count="0" type="stmt"/>
       <line num="14" count="0" type="stmt"/>
       <line num="18" count="0" type="stmt"/>
-      <line num="20" count="2" type="stmt"/>
-      <line num="24" count="2" type="stmt"/>
-      <line num="29" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="29" count="5" type="stmt"/>
       <line num="30" count="2" type="stmt"/>
       <line num="31" count="2" type="stmt"/>
       <line num="32" count="2" type="stmt"/>
@@ -45,16 +45,15 @@
       <line num="34" count="1" type="stmt"/>
       <line num="38" count="1" type="stmt"/>
       <line num="40" count="1" type="stmt"/>
-      <line num="41" count="1" type="stmt"/>
-      <line num="45" count="1" type="stmt"/>
-      <line num="50" count="1" type="stmt"/>
+      <line num="44" count="1" type="stmt"/>
+      <line num="49" count="5" type="stmt"/>
+      <line num="50" count="0" type="stmt"/>
       <line num="51" count="0" type="stmt"/>
-      <line num="52" count="0" type="stmt"/>
     </file>
     <file name="records.js" path="/Users/fejirogospel/Documents/GitHub/iReporter-with-React/src/actions/records.js">
       <metrics statements="33" coveredstatements="24" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
-      <line num="12" count="1" type="stmt"/>
-      <line num="15" count="1" type="stmt"/>
+      <line num="12" count="3" type="stmt"/>
+      <line num="15" count="3" type="stmt"/>
       <line num="16" count="1" type="stmt"/>
       <line num="17" count="1" type="stmt"/>
       <line num="18" count="1" type="stmt"/>
@@ -63,7 +62,7 @@
       <line num="28" count="0" type="stmt"/>
       <line num="30" count="1" type="stmt"/>
       <line num="34" count="1" type="stmt"/>
-      <line num="39" count="1" type="stmt"/>
+      <line num="39" count="3" type="stmt"/>
       <line num="40" count="1" type="stmt"/>
       <line num="41" count="1" type="stmt"/>
       <line num="42" count="1" type="stmt"/>
@@ -72,7 +71,7 @@
       <line num="52" count="0" type="stmt"/>
       <line num="54" count="1" type="stmt"/>
       <line num="58" count="1" type="stmt"/>
-      <line num="64" count="1" type="stmt"/>
+      <line num="64" count="3" type="stmt"/>
       <line num="65" count="1" type="stmt"/>
       <line num="66" count="1" type="stmt"/>
       <line num="67" count="1" type="stmt"/>
@@ -86,6 +85,49 @@
       <line num="83" count="0" type="stmt"/>
       <line num="92" count="1" type="stmt"/>
       <line num="97" count="1" type="stmt"/>
+    </file>
+    <file name="report.js" path="/Users/fejirogospel/Documents/GitHub/iReporter-with-React/src/actions/report.js">
+      <metrics statements="15" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
+      <line num="4" count="2" type="stmt"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="24" count="0" type="stmt"/>
+      <line num="29" count="0" type="stmt"/>
+      <line num="31" count="1" type="stmt"/>
+      <line num="36" count="1" type="stmt"/>
+      <line num="41" count="2" type="stmt"/>
+      <line num="42" count="0" type="stmt"/>
+      <line num="43" count="0" type="stmt"/>
+    </file>
+    <file name="toast.js" path="/Users/fejirogospel/Documents/GitHub/iReporter-with-React/src/actions/toast.js">
+      <metrics statements="6" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <line num="4" count="3" type="stmt"/>
+      <line num="5" count="0" type="stmt"/>
+      <line num="8" count="0" type="stmt"/>
+      <line num="11" count="3" type="stmt"/>
+      <line num="12" count="0" type="stmt"/>
+      <line num="15" count="0" type="stmt"/>
+    </file>
+    <file name="updateRecord.js" path="/Users/fejirogospel/Documents/GitHub/iReporter-with-React/src/actions/updateRecord.js">
+      <metrics statements="13" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="8" count="2" type="stmt"/>
+      <line num="10" count="2" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="18" count="1" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="25" count="0" type="stmt"/>
+      <line num="31" count="0" type="stmt"/>
+      <line num="33" count="1" type="stmt"/>
+      <line num="38" count="1" type="stmt"/>
+      <line num="39" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

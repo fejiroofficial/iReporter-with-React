@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MiniHolder> should render without crashing 1`] = `
+<div>
+  <div />
+  <div>
+    <p>
+      Hello
+    </p>
+  </div>
+</div>
+`;

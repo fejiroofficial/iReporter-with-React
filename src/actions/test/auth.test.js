@@ -9,48 +9,42 @@ import expect from 'expect';
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
 
+const userSignData = {
+  email: 'gpspa@rocketmail.com',
+  password: '123456',
+  username: 'sparks',
+  firstname: 'sparks',
+  lastname: 'sparks',
+  othernames: 'sparks',
+  telephone: '08130609941'
+};
+
+const userData = {
+  email: 'gpsparks@rocketmail.com',
+  password: '123456',
+};
+
 describe('user SIGN_UP action', () => {
   afterEach(() => {
     fetchMock.restore();
   });
 
-  it('creates SUCCESS when request has been done', async () => {
+  it('creates FAILURE when request fails', async () => {
     await fetchMock.postOnce('/api/v1/auth/signup', {
-      body: { userData: ['do something'] },
+      body: { userSignData },
       headers: { 'content-type': 'application/json' }
     });
 
     const expectedActions = [
-      { type: types.SIGN_UP, user: {} },
+      { type: types.SIGN_IN_FAILURE, user: {} },
     ];
     const store = mockStore({ authReducer: {} });
 
-    return store.dispatch(actions.signupUser()).then(() => {
-      expect(store.getActions()).toEqual(expectedActions);
-    });
-  });
-  it('creates FAILURE when request has failed', async () => {
-    await fetchMock.postOnce('/api/v1/auth/signup', {
-      body: { userDatass: ['do something'] },
-      headers: { 'content-type': 'application/json' }
-    });
-
-    const expectedActions = [
-      { type: types.SIGN_UP, user: {} },
-    ];
-    const store = mockStore({ authReducer: {} });
-
-    return store.dispatch(actions.signupUser()).then(() => {
-      // return of async actions
+    return store.dispatch(actions.signupUser(userSignData)).then(() => {
       expect(store.getActions()).toEqual(expectedActions);
     });
   });
 });
-
-const userData = {
-  email: 'gpsparks@rocketmail.com',
-  password: '123456'
-};
 
 describe('user SIGN_IN action', () => {
   afterEach(() => {

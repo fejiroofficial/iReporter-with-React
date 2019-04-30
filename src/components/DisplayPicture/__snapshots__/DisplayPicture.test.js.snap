@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DisplayPicture> should render without crashing 1`] = `
+<div
+  style={
+    Object {
+      "backgroundImage": "url(undefined)",
+    }
+  }
+/>
+`;

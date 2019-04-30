@@ -131,6 +131,9 @@
     height: fit-content;
     margin-left: 350px;
   }
+  .RecordCard .Comment {
+    width: 492px;
+  }
 }
 
 @media (min-width: 1024px) {

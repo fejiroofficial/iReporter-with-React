@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HomePage> should render without crashing 1`] = `
+<aux>
+  <Connect(heroBanner) />
+  <MiniHolder
+    header="OUR WORK IS IMPORTANT"
+  >
+    <div>
+      <div>
+        <div>
+          <div />
+          <div>
+            REPORT
+          </div>
+          <div>
+            <p>
+              We provide a platform for reporting corruption and intervention cases to us.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div />
+          <div>
+            INVESTIGATE
+          </div>
+          <div>
+            <p>
+              We investigate selected reports of alleged red-flag and intervention cases that have an impact on society.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div />
+          <div>
+            EXPOSE
+          </div>
+          <div>
+            <p>
+              We work with mainstream media and security agencies to ensure corruption is fully exposed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </MiniHolder>
+  <MiniHolder
+    header="WE COVER AFRICA"
+  >
+    <div />
+  </MiniHolder>
+  <MiniHolder
+    header="RED-FLAGS"
+  >
+    <div>
+      <div
+        className="undefined undefined"
+      />
+      <div
+        className="undefined undefined"
+      />
+      <div
+        className="undefined undefined"
+      />
+      <div
+        className="undefined undefined"
+      />
+    </div>
+  </MiniHolder>
+  <MiniHolder
+    header="INTERVENTIONS"
+  >
+    <div>
+      <div
+        className="undefined undefined"
+      />
+      <div
+        className="undefined undefined"
+      />
+      <div
+        className="undefined undefined"
+      />
+      <div
+        className="undefined undefined"
+      />
+    </div>
+  </MiniHolder>
+  <MiniHolder
+    header="OUR PARTNERS"
+  >
+    <div>
+      <div
+        className="undefined undefined"
+      />
+      <div
+        className="undefined undefined"
+      />
+      <div
+        className="undefined undefined"
+      />
+      <div
+        className="undefined undefined"
+      />
+    </div>
+  </MiniHolder>
+</aux>
+`;

@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { successToast, failureToast } from '../../actions/toast';
 import { loginUser } from '../../actions/auth';
 import { ToastContainer } from 'react-toastify';
-import Spinner from '../spinner/Spinner';
+import { ClipLoader } from 'react-spinners';
 import Classes from './Login.css';
 
 const Login = (props) => {
@@ -55,13 +55,22 @@ const Login = (props) => {
       <div className={Classes.SignInContent}>
         <div className={Classes.SignInHeader}>Log into iReporter</div>
         <form className={Classes.SignInForm}>
-          <label for='Username'>Email/Username</label>
-          <input type='text' name='email' className="input-field" id='log-email' placeholder="Enter Email" required onChange={(event) => updateInput(event)}></input>
-          <input type='text' name='password' className="input-field" id='log-password' placeholder="Enter Password" required onChange={(event) => updateInput(event)}></input>
+          <label htmlFor="Username">Email/Username</label>
+          <input type="text" name="email" className="input-field" id="log-email" placeholder="Enter Email" required onChange={(event) => updateInput(event)} />
+          <input type="password" name="password" className="input-field" id="log-password" placeholder="Enter Password" required onChange={(event) => updateInput(event)} />
           <button
             className={Classes.SignBtn}
+            id="sign-btn"
             onClick={(event => validateUserData(event))}>
-            {loading ? <Spinner loading={loading} /> : 'Sign in'}</button>
+            {loading ?
+              <div className="reset_spinner_box">
+                <ClipLoader
+                  size={30}
+                  color="white"
+                />
+              </div>
+              : 'Sign in'}
+          </button>
         </form>
 
         <div className={Classes.SignNote}>

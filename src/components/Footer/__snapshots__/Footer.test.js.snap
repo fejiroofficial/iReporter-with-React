@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer> should render without crashing 1`] = `
+<footer>
+  <p>
+    <i
+      className="fa fa-copyright"
+    />
+    House of jiro media concepts
+  </p>
+</footer>
+`;
