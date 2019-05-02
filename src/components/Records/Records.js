@@ -28,14 +28,6 @@ const records = (props) => {
         {
           userRecords && userRecords.length !== 0 ?
             userRecords.map((userRecord, index) => {
-              // let imageEvidence;
-              // console.log(userRecord.image_url);
-              // if (userRecord.image_url !== null) {
-              //   console.log('yoyoyoyo');
-              //   imageEvidence = userRecord.image_url;
-              // } else {
-              //   imageEvidence = 'https://images.huffingtonpost.com/2015-08-13-1439490178-5587538-HP90_No_Evidence_500x390-thumb.jpg';
-              // }
               return (
                 <RecordCard
                   key={index}
