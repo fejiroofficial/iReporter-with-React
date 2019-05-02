@@ -3,9 +3,23 @@
 exports[`<RecordCard> should render without crashing 1`] = `
 <Link
   replace={false}
-  to="/ireport/undefineds/undefined"
+  to="/user/ireport/undefineds/undefined"
 >
   <div>
+    <div
+      style={
+        Object {
+          "backgroundImage": "url(undefined)",
+          "backgroundPosition": "50%",
+          "backgroundRepeat": "no-repeat",
+          "backgroundSize": "cover",
+          "height": "150px",
+          "width": "inherit",
+        }
+      }
+    />
+    comment:
+    <div />
     <div>
       <displayPicture />
       <div>
@@ -18,23 +32,9 @@ exports[`<RecordCard> should render without crashing 1`] = `
         <div />
       </div>
     </div>
-    <div />
     <div>
       <div>
         Status: 
-      </div>
-      <div>
-        <div>
-          For more details click
-          <Link
-            replace={false}
-            to="/ireport/undefineds/undefined"
-          >
-            <button>
-              here
-            </button>
-          </Link>
-        </div>
       </div>
     </div>
   </div>
