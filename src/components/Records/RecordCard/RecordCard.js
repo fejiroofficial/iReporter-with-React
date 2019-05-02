@@ -5,7 +5,7 @@ import DisplayPicture from '../../DisplayPicture/DisplayPicture';
 
 const recordCard = (props) => {
   const { recordId, recordType} = props;
-  const moreDetailsUrl = `/ireport/${recordType}s/${recordId}`;
+  const moreDetailsUrl = `/user/ireport/${recordType}s/${recordId}`;
   return (
     <Link className={Classes.RecordCardContainer} to={moreDetailsUrl}>
       <div className={Classes.RecordCard}>
