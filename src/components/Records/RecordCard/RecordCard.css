@@ -1,10 +1,11 @@
 .RecordCard {
   display: block;
-  height: 313px;
+  height: 461px;
   width: 301px;
   display: flex;
   flex-wrap: wrap;
   padding-left: 9px;
+  padding-right: 9px;
   box-shadow: 0px 0px 10px 1px lightgrey;
   padding-top: 7px;
   margin-bottom: 16px;
@@ -12,6 +13,12 @@
 
 .RecordCardContainer {
     text-decoration: none;
+    color: #383838;
+}
+
+.RecordCardImage {
+    height: 150px;
+    width: inherit;
     color: #383838;
 }
 
@@ -56,13 +63,12 @@
 }
 
 .RecordCard .Comment {
-  min-height: 178px;
-  width: 301px;
-  padding: 10px;
-  overflow-wrap: break-word;
-  margin-left: 51px;
-  margin-top: 20px;
-  font-size: 14px;
+    min-height: 107px;
+    width: 301px;
+    padding: 6px;
+    overflow-wrap: break-word;
+    margin-left: -5px;
+    font-size: 14px;
 }
 
 .InfoPanel {
@@ -92,65 +98,3 @@
 .StatusHolder {
   width: 200px;
 } 
-
-@media (min-width: 360px) {
-  .RecordCard {
-    display: block;
-  }
-}
-
-@media (min-width: 375px) {
-  .RecordCard {
-    display: block;
-    padding-left: 24px;
-    width: 340px;
-  }
-  .IconHolder {
-    height: fit-content;
-    margin-left: 75px;
-  }
-}
-
-@media (min-width: 414px) {
-  .RecordCard {
-    display: block;
-    padding-left: 24px;
-    width: 340px;
-  }
-}
-
-@media (min-width: 768px) {
-  .RecordCard {
-    display: block;
-    padding-left: 15px;
-    padding-top: 19px;
-    width: 615px;
-    min-height: 180px;
-  }
-  .IconHolder {
-    height: fit-content;
-    margin-left: 350px;
-  }
-  .RecordCard .Comment {
-    width: 492px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .RecordCard {
-    display: block;
-    padding-left: 15px;
-  }
-}
-
-@media (min-width: 1359px) {
-  .RecordCard {
-    display: block;
-  }
-}
-
-@media (min-width: 1583px) {
-  .RecordCard {
-    display: block;
-  }
-}

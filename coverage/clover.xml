@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1556753338609" clover="3.2.0">
-  <project timestamp="1556753338610" name="All files">
-    <metrics statements="109" coveredstatements="85" conditionals="0" coveredconditionals="0" methods="22" coveredmethods="14" elements="131" coveredelements="99" complexity="0" loc="109" ncloc="109" packages="1" files="6" classes="6"/>
+<coverage generated="1556813305530" clover="3.2.0">
+  <project timestamp="1556813305530" name="All files">
+    <metrics statements="124" coveredstatements="98" conditionals="0" coveredconditionals="0" methods="24" coveredmethods="16" elements="148" coveredelements="114" complexity="0" loc="124" ncloc="124" packages="1" files="6" classes="6"/>
     <file name="actionTypes.js" path="/Users/fejirogospel/Documents/GitHub/iReporter-with-React/src/actions/actionTypes.js">
-      <metrics statements="20" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="23" coveredstatements="23" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <line num="1" count="15" type="stmt"/>
       <line num="2" count="15" type="stmt"/>
       <line num="3" count="15" type="stmt"/>
@@ -24,6 +24,9 @@
       <line num="18" count="15" type="stmt"/>
       <line num="19" count="15" type="stmt"/>
       <line num="20" count="15" type="stmt"/>
+      <line num="21" count="15" type="stmt"/>
+      <line num="22" count="15" type="stmt"/>
+      <line num="23" count="15" type="stmt"/>
     </file>
     <file name="auth.js" path="/Users/fejirogospel/Documents/GitHub/iReporter-with-React/src/actions/auth.js">
       <metrics statements="22" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="4"/>
@@ -114,20 +117,32 @@
       <line num="15" count="0" type="stmt"/>
     </file>
     <file name="updateRecord.js" path="/Users/fejirogospel/Documents/GitHub/iReporter-with-React/src/actions/updateRecord.js">
-      <metrics statements="13" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <line num="8" count="2" type="stmt"/>
-      <line num="10" count="2" type="stmt"/>
-      <line num="11" count="1" type="stmt"/>
-      <line num="12" count="1" type="stmt"/>
-      <line num="13" count="1" type="stmt"/>
-      <line num="17" count="1" type="stmt"/>
-      <line num="18" count="1" type="stmt"/>
-      <line num="19" count="1" type="stmt"/>
-      <line num="25" count="0" type="stmt"/>
-      <line num="31" count="0" type="stmt"/>
-      <line num="33" count="1" type="stmt"/>
-      <line num="38" count="1" type="stmt"/>
-      <line num="39" count="1" type="stmt"/>
+      <metrics statements="25" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <line num="11" count="2" type="stmt"/>
+      <line num="13" count="2" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="21" count="1" type="stmt"/>
+      <line num="22" count="1" type="stmt"/>
+      <line num="28" count="0" type="stmt"/>
+      <line num="34" count="0" type="stmt"/>
+      <line num="36" count="1" type="stmt"/>
+      <line num="41" count="1" type="stmt"/>
+      <line num="42" count="1" type="stmt"/>
+      <line num="47" count="2" type="stmt"/>
+      <line num="48" count="1" type="stmt"/>
+      <line num="49" count="1" type="stmt"/>
+      <line num="50" count="1" type="stmt"/>
+      <line num="54" count="1" type="stmt"/>
+      <line num="55" count="1" type="stmt"/>
+      <line num="56" count="1" type="stmt"/>
+      <line num="65" count="0" type="stmt"/>
+      <line num="71" count="0" type="stmt"/>
+      <line num="73" count="1" type="stmt"/>
+      <line num="78" count="1" type="stmt"/>
+      <line num="79" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

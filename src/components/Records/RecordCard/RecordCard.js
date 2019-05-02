@@ -4,11 +4,24 @@ import Classes from './RecordCard.css';
 import DisplayPicture from '../../DisplayPicture/DisplayPicture';
 
 const recordCard = (props) => {
-  const { recordId, recordType} = props;
-  const moreDetailsUrl = `/ireport/${recordType}s/${recordId}`;
+  const { recordId, recordType, recordImage} = props;
+
+  const recordCardImage = {
+    height: '150px',
+    width: 'inherit',
+    backgroundImage: `url(${recordImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: '50%',
+    backgroundRepeat: 'no-repeat'
+};
+
+  const moreDetailsUrl = `/user/ireport/${recordType}s/${recordId}`;
   return (
     <Link className={Classes.RecordCardContainer} to={moreDetailsUrl}>
       <div className={Classes.RecordCard}>
+        <div style={recordCardImage} />
+        comment:
+        <div className={Classes.Comment}>{props.comment}</div>
         <div className={Classes.InfoPanel}>
           <DisplayPicture image={props.image} />
           <div className={Classes.NameDateDiv}>
@@ -19,17 +32,8 @@ const recordCard = (props) => {
             <div className={Classes.RedFlagIcon} />
           </div>
         </div>
-        <div className={Classes.Comment}>{props.comment}</div>
         <div className={Classes.CardFooter}>
           <div className={Classes.StatusHolder}>Status: {props.status}</div>
-          <div className={Classes.DetailsHolder}>
-            <div className={Classes.Details}>
-              For more details click
-            <Link to={moreDetailsUrl}>
-                <button className={Classes.MoreBtn}>here</button>
-              </Link>
-            </div>
-          </div>
         </div>
       </div>
     </Link>

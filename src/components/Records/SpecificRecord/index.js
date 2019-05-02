@@ -1,12 +1,17 @@
+/* eslint-disable react/jsx-key */
 import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import dateFormat from 'dateformat';
 import { ClipLoader } from 'react-spinners';
+import PlacesAutocomplete, {
+  geocodeByAddress,
+  getLatLng,
+} from 'react-places-autocomplete';
 import GoogleMapReact from 'google-map-react';
 import Modal from 'react-modal';
 import Classes from './SpecificRecord.css';
 import { fetchRecord } from '../../../actions/records';
-import { updateCommentAction } from '../../../actions/updateRecord';
+import { updateCommentAction, updateLocationAction } from '../../../actions/updateRecord';
 
 const customStyles = {
   content: {
@@ -22,11 +27,40 @@ const customStyles = {
 };
 
 const SpecificRecord = (props) => {
-  const { 
-    match: { params }, 
-    isLoading, 
-    recordData, 
-    latitude, 
+
+  const [locationData, setLocationData] = useState({
+    latitude: '',
+    longitude: '',
+  });
+
+  const [location, setLocation] = useState('');
+
+  const handleChange = address => {
+    setLocation(address);
+  };
+
+  const handleSelect = address => {
+    geocodeByAddress(address)
+      .then(results => {
+        setLocation(results[0].formatted_address);
+        return getLatLng(results[0]);
+      })
+      .then(latLng => {
+        //dispatch an action here to update the lat and long state
+        setLocationData({
+          ...locationData,
+          latitude: latLng.lat,
+          longitude: latLng.lng,
+        });
+      })
+      .catch(error => alert(error));
+  };
+
+  const {
+    match: { params },
+    isLoading,
+    recordData,
+    latitude,
     longitude,
   } = props;
 
@@ -61,6 +95,10 @@ const SpecificRecord = (props) => {
 
   const updateCommentSubmitHandler = () => {
     props.updateCommentAction(commentInput, params);
+  };
+
+  const updateLocationSubmitHandler = () => {
+    props.updateLocationAction(locationData, params);
   };
 
   useEffect(() => (
@@ -186,8 +224,47 @@ const SpecificRecord = (props) => {
             :
             <div>
               <h1>Edit location</h1>
-              <textarea />
-              <button>Update location</button>
+              <div className={Classes.PacContainer}>
+                <PlacesAutocomplete
+                  value={location}
+                  onChange={handleChange}
+                  onSelect={handleSelect}
+                >
+                  {({ getInputProps, suggestions, getSuggestionItemProps }) => (
+                    <div className={Classes.InputBox}>
+                      <input
+                        className={Classes.PacInput}
+                        {...getInputProps({
+                          placeholder: 'Enter a location',
+                        })}
+                        value={location}
+                      />
+                      <div className={Classes.AutoCompleteContainer}>
+                        {suggestions.map(suggestion => {
+                          const className = suggestion.active
+                            ? 'suggestion-item--active'
+                            : 'suggestion-item';
+                          const style = suggestion.active
+                            ? { backgroundColor: 'lightseagreen', cursor: 'pointer', color: 'white' }
+                            : { backgroundColor: '#ffffff', cursor: 'pointer' };
+                          return (
+                            <div
+                              {...getSuggestionItemProps(suggestion, {
+                                className,
+                                style,
+                                key: 1,
+                              })}
+                            >
+                              <span>{suggestion.description}</span>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
+                </PlacesAutocomplete>
+              </div>
+              <button className={Classes.ModalBtn} onClick={() => updateLocationSubmitHandler()}>Update location</button>
             </div>
         }
       </Modal>
@@ -205,4 +282,7 @@ const mapStateToProps = state => ({
   commentMessage: state.updateCommentReducer.message,
 });
 
-export default connect(mapStateToProps, { fetchRecord, updateCommentAction })(SpecificRecord);
+export default connect(mapStateToProps, 
+  { fetchRecord, 
+    updateCommentAction,
+    updateLocationAction })(SpecificRecord);

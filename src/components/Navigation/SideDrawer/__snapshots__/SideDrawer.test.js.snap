@@ -1,60 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<NavigationItems> should render without crashing 1`] = `
-<div>
-  <button>
-    ×
-  </button>
-  <div>
-    <div />
-    <NavLink
-      activeClassName="active"
-      aria-current="page"
-      to="/about"
-    >
-      ABOUT US
-    </NavLink>
-    <div />
-    <NavLink
-      activeClassName="active"
-      aria-current="page"
-      to="/corruption"
-    >
-      LEARN ABOUT CORRUPTION
-    </NavLink>
-    <div />
-    <NavLink
-      activeClassName="active"
-      aria-current="page"
-      to="/redflags"
-    >
-      REDFLAGS
-    </NavLink>
-    <div />
-    <NavLink
-      activeClassName="active"
-      aria-current="page"
-      to="/interventions"
-    >
-      INTERVENTIONS
-    </NavLink>
-    <div />
-    <NavLink
-      activeClassName="active"
-      aria-current="page"
-      to="/login"
-    >
-      LOGIN
-    </NavLink>
-    <div />
-    <NavLink
-      activeClassName="active"
-      aria-current="page"
-      to="/signup"
-    >
-      SIGN UP
-    </NavLink>
-    <div />
-  </div>
-</div>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;

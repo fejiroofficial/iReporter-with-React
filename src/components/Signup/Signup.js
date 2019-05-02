@@ -50,7 +50,7 @@ const signUp = (props) => {
     const fieldsArr = Object.entries(userData);
     const errors = [];
     fieldsArr.forEach(field => {
-      if (!field[1]) {
+      if (!field[1] && field[0] !== 'othernames') {
         errors.push(`${field[0]} is required.`);
         props.failureToast(`${field[0]} is required.`);
       }
@@ -95,7 +95,7 @@ const signUp = (props) => {
           </button>
         </form>
         <div className={Classes.SignNote}>
-          <p>Do not have an account? Create an account
+          <p>Already have an account? login
           <Link to="/login">here...</Link>
           </p>
         </div>

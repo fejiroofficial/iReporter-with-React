@@ -27,19 +27,22 @@ const records = (props) => {
       <div className={Classes.RecordContainer}>
         {
           userRecords && userRecords.length !== 0 ?
-            userRecords.map((userRecord, index) => (
-              <RecordCard
-                key={index}
-                firstname={userRecord.firstname}
-                lastname={userRecord.lastname}
-                comment={userRecord.comment}
-                status={userRecord.status}
-                date={dateFormat(userRecord.createdon)}
-                image={userRecord.profile_image}
-                recordId={userRecord.id}
-                recordType={userRecord.type}
-              />
-            ))
+            userRecords.map((userRecord, index) => {
+              return (
+                <RecordCard
+                  key={index}
+                  firstname={userRecord.firstname}
+                  lastname={userRecord.lastname}
+                  comment={userRecord.comment}
+                  status={userRecord.status}
+                  date={dateFormat(userRecord.createdon)}
+                  recordImage={userRecord.image_url}
+                  image={userRecord.profile_image}
+                  recordId={userRecord.id}
+                  recordType={userRecord.type}
+                />
+              );
+            })
             : <div className={Classes.EmptyRecordContainer}>
             <RecordCard
               firstname=""

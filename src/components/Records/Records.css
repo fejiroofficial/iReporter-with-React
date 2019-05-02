@@ -10,13 +10,17 @@
 }
 
 .RecordContainer {
-  height: -webkit-fill-available;
-  width: 100%;
-  display: grid;
-  justify-content: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 15pc;
 }
 
 .EmptyRecordContainer {
-  height: 100vh;
-  width: inherit;
+    height: 100vh;
+    width: inherit;
+    justify-content: center;
+    display: flex;
 }
