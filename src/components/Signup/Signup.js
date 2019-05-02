@@ -50,7 +50,7 @@ const signUp = (props) => {
     const fieldsArr = Object.entries(userData);
     const errors = [];
     fieldsArr.forEach(field => {
-      if (!field[1]) {
+      if (!field[1] && field[0] !== 'othernames') {
         errors.push(`${field[0]} is required.`);
         props.failureToast(`${field[0]} is required.`);
       }
