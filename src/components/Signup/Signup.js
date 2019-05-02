@@ -95,7 +95,7 @@ const signUp = (props) => {
           </button>
         </form>
         <div className={Classes.SignNote}>
-          <p>Do not have an account? Create an account
+          <p>Already have an account? login
           <Link to="/login">here...</Link>
           </p>
         </div>
